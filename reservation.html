@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Velvet Spoon - Modern European Fine Dining & Bakery</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- PURE CSS MOBILE DRAWER CONTROLLER -->
+    <input type="checkbox" id="nav-toggle" class="nav-toggle">
+
+     <!-- HEADER / NAVIGATION -->
+    <header class="navbar">
+        <div class="nav-container">
+            <a href="/" class="logo">The Velvet <span>Spoon</span></a>
+            
+            <label for="nav-toggle" class="hamburger-btn">
+                <span></span>
+                <span></span>
+                <span></span>
+            </label>
+
+            <nav class="nav-menu">
+                <a href="/" class="nav-link">Home</a>
+                <a href="/aboutus.html" class="nav-link">About Us</a>
+                <a href="/gallery.html" class="nav-link">Menu</a>
+                <a href="/special.html" class="nav-link">Specials</a>
+                <a href="/chefs.html" class="nav-link">Chefs</a>
+                <a href="/gallery.html" class="nav-link">Gallery</a>
+                <a href="/reservation.html" class="nav-link">Reservation</a>
+                <a href="/contact.html" class="nav-link">Contact</a>
+                <a href="/reservation.html" class="nav-btn">Reserve Table</a>
+            </nav>
+        </div>
+    </header>
+
+   <!-- PAGE 7: RESERVATION SECTION -->
+    <section id="reservation" class="page-section section-padding">
+        <div class="container">
+            <div class="section-header">
+                <span class="sub-title">Table Booking</span>
+                <h2>Reserve Your Dining Experience</h2>
+            </div>
+
+            <div class="form-wrapper">
+                <form onsubmit="return false;" class="reservation-form">
+                    <div class="form-group">
+                        <label>Full Name</label>
+                        <input type="text" placeholder="Lady Eleanor Vance" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label>Email Address</label>
+                        <input type="email" placeholder="eleanor@example.com" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label>Phone Number</label>
+                        <input type="tel" placeholder="+1 (555) 019-2834" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label>Party Size</label>
+                        <select required>
+                            <option value="">Select Guests</option>
+                            <option>2 Guests (Romantic Dining)</option>
+                            <option>4 Guests (Family Table)</option>
+                            <option>6+ Guests (VIP Private Lounge)</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label>Date</label>
+                        <input type="date" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label>Preferred Time</label>
+                        <select required>
+                            <option value="">Select Time Slot</option>
+                            <option>08:00 AM (Breakfast & Bakery)</option>
+                            <option>01:30 PM (European Lunch)</option>
+                            <option>07:30 PM (Fine Dining Dinner)</option>
+                            <option>09:30 PM (Late Night Tasting)</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group full">
+                        <label>Special Requests / Dietary Notes</label>
+                        <textarea rows="4" placeholder="Anniversary arrangements, wine pairings, or allergy preferences..."></textarea>
+                    </div>
+
+                    <div class="form-group full">
+                        <button type="submit" class="btn btn-primary full-width">Confirm Reservation</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="container footer-content">
+            <div class="footer-brand">
+                <a href="#home" class="logo">The Velvet <span>Spoon</span></a>
+                <p>Modern Fine Dining & Artisanal Bakery. Dedicated to culinary perfection and memorable elegance.</p>
+            </div>
+             <div class="footer-links">
+                <h4>Navigation</h4>
+                <a href="/">Home</a>
+                <a href="/aboutus.html">about us</a>
+                <a href="/menu.html"> Menu</a>
+                <a href="/reservation.html">Reserve Table</a>
+            </div>
+            <div class="footer-links">
+                <h4>Opening Schedule</h4>
+                <p>Bakery & Cafe<br><strong>07:30 AM - 04:00 PM</strong></p>
+                <p>Fine Dining Dinner<br><strong>05:30 PM - 11:30 PM</strong></p>
+            </div>
+        </div>
+       
+    </footer>
+
+</body>
+</html>

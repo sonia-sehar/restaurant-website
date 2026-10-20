@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Velvet Spoon - Modern European Fine Dining & Bakery</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- PURE CSS MOBILE DRAWER CONTROLLER -->
+    <input type="checkbox" id="nav-toggle" class="nav-toggle">
+
+    <!-- HEADER / NAVIGATION -->
+    <header class="navbar">
+        <div class="nav-container">
+            <a href="/" class="logo">The Velvet <span>Spoon</span></a>
+            
+            <label for="nav-toggle" class="hamburger-btn">
+                <span></span>
+                <span></span>
+                <span></span>
+            </label>
+
+            <nav class="nav-menu">
+                <a href="/" class="nav-link">Home</a>
+                <a href="/aboutus.html" class="nav-link">About Us</a>
+                <a href="/gallery.html" class="nav-link">Menu</a>
+                <a href="/special.html" class="nav-link">Specials</a>
+                <a href="/chefs.html" class="nav-link">Chefs</a>
+                <a href="/gallery.html" class="nav-link">Gallery</a>
+                <a href="/reservation.html" class="nav-link">Reservation</a>
+                <a href="/contact.html" class="nav-link">Contact</a>
+                <a href="/reservation.html" class="nav-btn">Reserve Table</a>
+            </nav>
+        </div>
+    </header>
+
+      <!-- PAGE 3: MENU SECTION (PURE CSS FILTER TABS) -->
+    <section id="menu" class="page-section section-padding">
+        <div class="container">
+            <div class="section-header">
+                <span class="sub-title">Our Menu</span>
+                <h2>European Delicacies & Bakery</h2>
+            </div>
+
+            <!-- CSS Radio Controllers for Tabs -->
+            <input type="radio" name="menu-filter" id="m-all" class="menu-filter-radio" checked>
+            <input type="radio" name="menu-filter" id="m-bakery" class="menu-filter-radio">
+            <input type="radio" name="menu-filter" id="m-pastas" class="menu-filter-radio">
+            <input type="radio" name="menu-filter" id="m-steaks" class="menu-filter-radio">
+            <input type="radio" name="menu-filter" id="m-desserts" class="menu-filter-radio">
+
+            <div class="menu-tabs">
+                <label for="m-all" class="tab-btn">All Creations</label>
+                <label for="m-bakery" class="tab-btn">Artisanal Bakery</label>
+                <label for="m-pastas" class="tab-btn">Fresh Pastas</label>
+                <label for="m-steaks" class="tab-btn">Prime Steaks</label>
+                <label for="m-desserts" class="tab-btn">Handmade Desserts</label>
+            </div>
+
+            <div class="menu-grid">
+                <!-- Bakery -->
+                <div class="menu-card bakery">
+                    <img src="https://images.unsplash.com/photo-1555507036-ab1f4038808a?auto=format&fit=crop&w=500&q=80" alt="Butter Croissant">
+                    <div class="card-info">
+                        <div class="card-header-flex">
+                            <h4>Parisian Butter Croissant</h4>
+                            <span class="price">$6.50</span>
+                        </div>
+                        <p>Flaky, gold-baked French butter croissant baked fresh every morning.</p>
+                    </div>
+                </div>
+                <div class="menu-card bakery">
+                    <img src="https://images.unsplash.com/photo-1509440159596-0249088772ff?auto=format&fit=crop&w=500&q=80" alt="Artisan Bread">
+                    <div class="card-info">
+                        <div class="card-header-flex">
+                            <h4>Sourdough & Garlic Truffle Butter</h4>
+                            <span class="price">$9.00</span>
+                        </div>
+                        <p>Slow-fermented artisan sourdough served warm with house whip truffle butter.</p>
+                    </div>
+                </div>
+
+                <!-- Pastas -->
+                <div class="menu-card pastas">
+                    <img src="https://images.unsplash.com/photo-1551183053-bf91a1d81141?auto=format&fit=crop&w=500&q=80" alt="Truffle Tagliatelle">
+                    <div class="card-info">
+                        <div class="card-header-flex">
+                            <h4>Truffle Tagliatelle</h4>
+                            <span class="price">$28.00</span>
+                        </div>
+                        <p>Hand-rolled ribbon pasta tossed in black truffle cream and Parmigiano-Reggiano.</p>
+                    </div>
+                </div>
+               <div class="menu-card pastas">
+                    <img src="https://images.unsplash.com/photo-1563379091339-03b21ab4a4f8?auto=format&fit=crop&w=500&q=80" alt="Lobster Ravioli">
+                    <div class="card-info">
+                        <div class="card-header-flex">
+                            <h4>Maine Lobster Ravioli</h4>
+                            <span class="price">$34.00</span>
+                        </div>
+                        <p>Handcrafted pasta stuffed with sweet Maine lobster in saffron bisque sauce.</p>
+                    </div>
+                </div>
+
+                <!-- Steaks -->
+                <div class="menu-card steaks">
+                    <img src="https://images.unsplash.com/photo-1558030006-450675393462?auto=format&fit=crop&w=500&q=80" alt="Filet Mignon">
+                    <div class="card-info">
+                        <div class="card-header-flex">
+                            <h4>Rosemary Filet Mignon</h4>
+                            <span class="price">$46.00</span>
+                        </div>
+                        <p>28-day dry-aged center-cut beef tenderloin served with roasted garlic butter.</p>
+                    </div>
+                </div>
+                <div class="menu-card steaks">
+                    <img src="https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&fit=crop&w=500&q=80" alt="Ribeye Steak">
+                    <div class="card-info">
+                        <div class="card-header-flex">
+                            <h4>Angus Prime Ribeye</h4>
+                            <span class="price">$52.00</span>
+                        </div>
+                        <p>Flame-charred Angus ribeye topped with herb marrow bone jus.</p>
+                    </div>
+                </div>
+
+                <!-- Desserts -->
+                <div class="menu-card desserts">
+                    <img src="https://images.unsplash.com/photo-1571877227200-a0d98ea607e9?auto=format&fit=crop&w=500&q=80" alt="Velvet Chocolate Soufflé">
+                    <div class="card-info">
+                        <div class="card-header-flex">
+                            <h4>Velvet Chocolate Soufflé</h4>
+                            <span class="price">$14.00</span>
+                        </div>
+                        <p>Warm Valrhona dark chocolate soufflé served with Madagascan vanilla ice cream.</p>
+                    </div>
+                </div>
+                <div class="menu-card desserts">
+                    <img src="https://images.unsplash.com/photo-1533134242443-d4fd215305ad?auto=format&fit=crop&w=500&q=80" alt="Fruit Tart">
+                    <div class="card-info">
+                        <div class="card-header-flex">
+                            <h4>French Berry Tart</h4>
+                            <span class="price">$12.50</span>
+                        </div>
+                        <p>Crispy pastry shell filled with vanilla pastry cream and fresh wild berries.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="container footer-content">
+            <div class="footer-brand">
+                <a href="#home" class="logo">The Velvet <span>Spoon</span></a>
+                <p>Modern Fine Dining & Artisanal Bakery. Dedicated to culinary perfection and memorable elegance.</p>
+            </div>
+            <div class="footer-links">
+                <h4>Navigation</h4>
+                <a href="/">Home</a>
+                <a href="/aboutus.html">about us</a>
+                <a href="/menu.html"> Menu</a>
+                <a href="/reservation.html">Reserve Table</a>
+            </div>
+            <div class="footer-links">
+                <h4>Opening Schedule</h4>
+                <p>Bakery & Cafe<br><strong>07:30 AM - 04:00 PM</strong></p>
+                <p>Fine Dining Dinner<br><strong>05:30 PM - 11:30 PM</strong></p>
+            </div>
+        </div>
+       
+    </footer>
+
+</body>
+</html>

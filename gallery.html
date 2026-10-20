@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Velvet Spoon - Modern European Fine Dining & Bakery</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- PURE CSS MOBILE DRAWER CONTROLLER -->
+    <input type="checkbox" id="nav-toggle" class="nav-toggle">
+
+     <!-- HEADER / NAVIGATION -->
+    <header class="navbar">
+        <div class="nav-container">
+            <a href="/" class="logo">The Velvet <span>Spoon</span></a>
+            
+            <label for="nav-toggle" class="hamburger-btn">
+                <span></span>
+                <span></span>
+                <span></span>
+            </label>
+
+            <nav class="nav-menu">
+                <a href="/" class="nav-link">Home</a>
+                <a href="/aboutus.html" class="nav-link">About Us</a>
+                <a href="/gallery.html" class="nav-link">Menu</a>
+                <a href="/special.html" class="nav-link">Specials</a>
+                <a href="/chefs.html" class="nav-link">Chefs</a>
+                <a href="/gallery.html" class="nav-link">Gallery</a>
+                <a href="/reservation.html" class="nav-link">Reservation</a>
+                <a href="/contact.html" class="nav-link">Contact</a>
+                <a href="/reservation.html" class="nav-btn">Reserve Table</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- PAGE 6: GALLERY SECTION (CSS LIGHTBOX) -->
+    <section id="gallery" class="page-section section-padding alt-bg">
+        <div class="container">
+            <div class="section-header">
+                <span class="sub-title">Aesthetic Moments</span>
+                <h2>Restaurant & Culinary Gallery</h2>
+            </div>
+
+            <div class="gallery-grid">
+                <a href="#img1" class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&w=500&q=80" alt="Interior">
+                    <div class="gallery-overlay"><span>Luxury Dining Space</span></div>
+                </a>
+                <a href="#img2" class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&fit=crop&w=500&q=80" alt="Plated Dish">
+                    <div class="gallery-overlay"><span>Artisanal Plating</span></div>
+                </a>
+                <a href="#img3" class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1510812431401-41d2bd2722f3?auto=format&fit=crop&w=500&q=80" alt="Wine Selection">
+                    <div class="gallery-overlay"><span>Private Wine Cellar</span></div>
+                </a>
+                <a href="#img4" class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1509440159596-0249088772ff?auto=format&fit=crop&w=500&q=80" alt="Bakery Display">
+                    <div class="gallery-overlay"><span>Fresh Morning Bakery</span></div>
+                </a>
+            </div>
+
+            <!-- CSS Lightbox Modals -->
+            <div id="img1" class="lightbox">
+                <a href="#gallery" class="lightbox-close">&times;</a>
+                <div class="lightbox-box">
+                    <img src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&w=1000&q=80" alt="Interior Large">
+                    <h3>Luxury Main Dining Room</h3>
+                    <p>Designed with warm velvet seating, soft rose-gold brass accents, and ambient lighting.</p>
+                </div>
+            </div>
+
+            <div id="img2" class="lightbox">
+                <a href="#gallery" class="lightbox-close">&times;</a>
+                <div class="lightbox-box">
+                    <img src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&fit=crop&w=1000&q=80" alt="Plated Dish Large">
+                    <h3>Gourmet Plating Excellence</h3>
+                    <p>Every dish is plated with precision, micro-greens, and handcrafted edible accents.</p>
+                </div>
+            </div>
+
+            <div id="img3" class="lightbox">
+                <a href="#gallery" class="lightbox-close">&times;</a>
+                <div class="lightbox-box">
+                    <img src="https://images.unsplash.com/photo-1510812431401-41d2bd2722f3?auto=format&fit=crop&w=1000&q=80" alt="Wine Large">
+                    <h3>Rare Vintage Wine Collection</h3>
+                    <p>Our cellar holds over 400 carefully curated European vintage wines and champagnes.</p>
+                </div>
+            </div>
+
+            <div id="img4" class="lightbox">
+                <a href="#gallery" class="lightbox-close">&times;</a>
+                <div class="lightbox-box">
+                    <img src="https://images.unsplash.com/photo-1509440159596-0249088772ff?auto=format&fit=crop&w=1000&q=80" alt="Bakery Large">
+                    <h3>Daily Artisanal Bake House</h3>
+                    <p>Fresh sourdoughs, brioches, and French butter croissants baked from 5:00 AM daily.</p>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="container footer-content">
+            <div class="footer-brand">
+                <a href="#home" class="logo">The Velvet <span>Spoon</span></a>
+                <p>Modern Fine Dining & Artisanal Bakery. Dedicated to culinary perfection and memorable elegance.</p>
+            </div>
+            <div class="footer-links">
+                <h4>Navigation</h4>
+                <a href="/">Home</a>
+                <a href="/aboutus.html">about us</a>
+                <a href="/menu.html"> Menu</a>
+                <a href="/reservation.html">Reserve Table</a>
+            </div>
+            <div class="footer-links">
+                <h4>Opening Schedule</h4>
+                <p>Bakery & Cafe<br><strong>07:30 AM - 04:00 PM</strong></p>
+                <p>Fine Dining Dinner<br><strong>05:30 PM - 11:30 PM</strong></p>
+            </div>
+        </div>
+       
+    </footer>
+
+</body>
+</html>
